@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
+  cursos : string[] = ['Java', 'Type', 'C#']
+
   constructor() { }
 
   ngOnInit(): void {
