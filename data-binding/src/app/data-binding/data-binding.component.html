@@ -37,3 +37,30 @@
   <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">Erro</div>
   </article>
 </section>
+<section>
+  <article>
+    <h3>Event Binfing</h3>
+    <div>
+      <button (click)="botaoClicado()"  class="btn btn-primary">Clique</button>
+      <br> <br>
+      <input type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvarValor(campoInput.value)"
+      (blur)="salvarValor(campoInput.value)"
+      #campoInput/>
+
+      <p>Valor atual: {{valorAtual}}</p>
+      <p>Valor atual: {{valorSalvo}}</p>
+
+      <br><br>
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.fonte]="isMouseOver">
+        <p>Passe o mause aqui</p>
+      </span>
+      <br><br>
+    </div>
+  </article>
+
+</section>
