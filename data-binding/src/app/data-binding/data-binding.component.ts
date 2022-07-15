@@ -11,6 +11,7 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   urlImagem = 'http://lorempixel.com/400/200/nature/'
 
+  nomeDoCurso: string = 'Angular';
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
