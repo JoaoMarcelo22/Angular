@@ -20,9 +20,9 @@ export class OutputPropertyComponent implements OnInit {
     this.mudouValor.emit({novoValor : this.valor})
   }
 
-  onMudouValor(evento){
-    console.log(evento);
-  }
+ //onMudouValor(evento){
+ //   console.log(evento);
+  //}
 
   constructor() { }
 

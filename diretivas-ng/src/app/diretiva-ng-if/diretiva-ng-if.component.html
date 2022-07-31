@@ -1,0 +1,22 @@
+<h5>*ng</h5>
+<div *ngIf="cursos.length > 0">
+  Listas de cursos aqui.
+</div>
+<div *ngIf="cursos.length == 0">
+  Não existem cursos para sem listados.
+</div>
+<div *ngIf="mostrarCursos">
+  Listas de cursos aqui.
+</div>
+<div *ngIf="!mostrarCursos">
+  Não existem cursos
+</div>
+
+<br>
+<button (click)="onMostrar()">Mostrar ou esconder cursos</button>
+<div [hidden]="!mostrarCursos">
+  Listas de cursos aqui.
+</div>
+<div [hidden]="mostrarCursos">
+  Não existem cursos
+</div>

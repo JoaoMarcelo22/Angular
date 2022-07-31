@@ -45,9 +45,9 @@ export class DataBindingComponent implements OnInit {
     this.valorAtual = ((<HTMLInputElement>evento.target).value);
   }
 
-  onMudouValor(evento){
-    console.log(evento.novoValor);
-  }
+  //onMudouValor(evento){
+  //  console.log(evento.novoValor);
+  //}
   constructor() { }
 
   ngOnInit(): void {

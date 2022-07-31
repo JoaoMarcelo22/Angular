@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  valor: number = 5;
-  mudarVaor(){
-    this.valor++;
-  }
+  title = 'diretivas-ng';
 }
